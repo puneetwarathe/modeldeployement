@@ -1,0 +1,113 @@
+<html>
+<head>
+		<title>COVID-19 TESTING</title>
+		<link rel="stylesheet" href="style.css">
+	<style>
+body {
+   background-image:url('https://images.yourstory.com/cs/5/803961002d6d11e9aa979329348d4c3e/FI-1588256555065.png');
+     background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.heading{
+	margin-top:-1%;	
+     background-color:#FAEBD7	;
+	 font-weight: bolder;
+     font-size: 30px;
+}	
+.container {
+  height: 200px;
+
+  position: relative;
+ 
+}
+
+.vertical-center {
+  margin-top:10px; 
+  position: absolute;
+  font-weight: bolder;
+  font-size: 20px;
+  color:red;
+  top: 110%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+   width: 315px;
+  border: 15px;
+  padding: 50px;
+  margin: 10px;
+  background-color:#FAEBD7;
+}
+
+</style>	
+	</head> 
+<body>
+    
+	<div class="heading">
+		<h1 align="center">Heart Failure Prediction</h1>
+	</div>
+
+<div>
+  <div class="container">
+    <div class="vertical-center">
+  <form action="/result" method="POST">
+    <label for="age">Age</label>
+    <input type="text" id="age" name="age">
+    <br>
+    <label for="anaemia">anaemia</label>
+    <select id="anaemia" name="anaemia">
+      <option value="0">No</option>
+      <option value="1">Yes</option>
+    </select>
+    <br>
+	 <label for="creatinine_phosphokinase">Creatinine_phoskinase</label>
+    <input type="text" id="creatinine_phosphokinase" name="creatinine_phosphokinase">
+    <br>
+    <label for="diabetes">Diabetes</label>
+    <select id="diabetes" name="diabetes">
+      <option value="0">No</option>
+      <option value="1">Yes</option>
+    </select>
+    <br>
+	<label for="ejection_fraction">Ejection_fraction</label>
+    <input type="text" id="ejection_fraction" name="ejection_fraction">
+    <br>
+	
+    <label for="high_blood_pressure">High_blood_pressure</label>
+    <select id="high_blood_pressure" name="high_blood_pressure">
+      <option value="0">No</option>
+      <option value="1">Yes</option>
+      </select>
+    <br>
+	<label for="platelets">Platelets count</label>
+    <input type="text" id="platelets" name="platelets">
+    <br>
+	<label for="serum_creatinine">Serum_creatnine</label>
+    <input type="text" id="serum_creatinine" name="serum_creatinine">
+    <br>
+	<label for="serum_sodium">Serum_sodium</label>
+    <input type="text" id="serum_sodium" name="serum_sodium">
+    <br>
+    
+    <label for="sex">Sex</label>
+    <select id="sex" name="sex">
+      <option value="0">Female</option>
+      <option value="1">Male</option>
+    </select>
+    <br>
+	<label for="smoking">Smoking</label>
+    <select id="smoking" name="smoking">
+      <option value="0">No</option>
+      <option value="1">Yes</option>
+    </select>
+    <br>
+    <label for="time">Time</label>
+    <input type="text" id="time" name="time">
+    <br>
+    <input type="submit" value="Submit">
+  </form>
+   </div>
+  </div>
+</div>
+</body>
+</html>
